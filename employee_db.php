@@ -1,9 +1,9 @@
 <?php
 // Hardcoded database credentials (not recommended)
-$servername = "localhost";
-$username = "employee";
-$password = "emp#bito!454";
-$dbname = "employee_management";
+$servername = getenv('DB_HOST');
+$username = getenv('DB_USER');
+$password = getenv('DB_PASSWORD');
+$dbname = getenv('DB_NAME');
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
