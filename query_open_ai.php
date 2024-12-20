@@ -28,7 +28,9 @@ $response = curl_exec($ch);
 
 // Check for errors
 if ($response === FALSE) {
-    die('Curl error: ' . curl_error($ch));
+    $error = curl_error($ch);
+    error_log("OpenAI API Error: " . $error);
+    throw new Exception("Failed to call OpenAI API: " . $error);
 }
 
 // Close cURL
