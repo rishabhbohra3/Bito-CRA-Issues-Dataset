@@ -1,6 +1,7 @@
-<?php
-$apiKey = "sk-utRJzHluRSPOljnDhnORT5BlbkFJkPSHrIf4MqUIs2rAfUY2";
-
+ <?php
+// Load API key from environment variable
+$apiKey = getenv('OPENAI_API_KEY') ?: die('OPENAI_API_KEY environment variable is not set');
+ 
 // API Endpoint
 $url = "https://api.openai.com/v1/completions";
 
