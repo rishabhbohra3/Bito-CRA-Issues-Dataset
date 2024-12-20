@@ -36,5 +36,9 @@ curl_close($ch);
 
 // Decode and print the response
 $responseData = json_decode($response, true);
-echo $responseData['choices'][0]['text'];
+if (isset($responseData['choices'][0]['text'])) {
+    echo $responseData['choices'][0]['text'];
+} else {
+    echo 'No valid response text received';
+}
 ?>
