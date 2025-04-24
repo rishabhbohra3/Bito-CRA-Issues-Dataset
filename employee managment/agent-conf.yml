@@ -1,0 +1,5 @@
+git:
+  provider: GITLAB
+  access_token: MAKzQU5nLvTw9n68ETzc
+  domain: gitlab.com
+  bito_access_key: eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoidjFfNDY2OV83ODEzMjFfNTQ4OTE2X1dlZCBGZWIgMjggMDk6NDM6NTMgVVRDIDIwMjQifQ.km-8VEuuZ1nWUAmWrVJ0VXiYRBCZ0LARTu_6OLTwuuA
